@@ -1,0 +1,4 @@
+*.nds filter=lfs diff=lfs merge=lfs -text
+urls/mvsc2.zip.html filter=lfs diff=lfs merge=lfs -text
+nes/roms/The[[:space:]]Legend[[:space:]]of[[:space:]]Zelda:[[:space:]]Spirit[[:space:]]Tracks.nds filter=lfs diff=lfs merge=lfs -text
+*.html filter=lfs diff=lfs merge=lfs -text

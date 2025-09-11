@@ -1,0 +1,23 @@
+entrypoint = "index.js"
+modules = ["nodejs-20:v8-20230920-bd784b9"]
+hidden = [".config", "package-lock.json"]
+run = "node index.js"
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "nodejs"
+
+[deployment]
+run = ["pm2", "start", "index.js"]
+
+deploymentTarget = "cloudrun"
+ignorePorts = false
+[auth] #idk jsut a random one
+
+[[ports]]
+localPort = 8080
+externalPort = 80
+
+[agent]
+expertMode = true
