@@ -4,7 +4,7 @@ http.createServer(function (req, res) {
   try {
     if (req.url.includes("/urls")){
       // quick hack to access data htmls
-      //res.write(`<script src="https://cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>`)
+      res.write(`<script src="https://cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>`)
       res.write(fs.readFileSync("."+req.url.replaceAll("%20"," "), {encoding: 'binary'}))
       return res.end()
     }
