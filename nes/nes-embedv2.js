@@ -67,13 +67,13 @@ let nostalgist = await Nostalgist.prepare({
   },
   resolveCoreJs(core) {
     if (isN64 || isDS) {
-      return `https://ebcf0f0b-8d6c-492c-84b9-2219e2fec157-00-3f6flbl37ndig.janeway.replit.dev/cores/${core}.js`;
+      return `/cores/${core}.js`;
     }
     return `https://cdn.jsdelivr.net/gh/arianrhodsandlot/retroarch-emscripten-build@v1.16.0/retroarch/${core}_libretro.js`;
   },
   resolveCoreWasm(core) {
     if (isN64 || isDS) {
-      return `https://ebcf0f0b-8d6c-492c-84b9-2219e2fec157-00-3f6flbl37ndig.janeway.replit.dev/cores/${core}.wasm`;
+      return `/cores/${core}.wasm`;
     }
     return `https://cdn.jsdelivr.net/gh/arianrhodsandlot/retroarch-emscripten-build@v1.16.0/retroarch/${core}_libretro.wasm`;
   },
