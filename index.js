@@ -45,8 +45,8 @@ http.createServer(function (req, res) {
     }else if(req.url == "/about"){
       res.write(fs.readFileSync("./about.html"));
     } else if (!req.url.includes("?rom=")&&!req.url.includes("/urls")) {
-      res.writeHead(301, { Location: "/list" });
-      res.write("<a href='/list'>redirect</a>");
+      res.writeHead(301, { Location: "/listall" });
+      res.write("<a href='/listall'>redirect</a>");
     } else {
       res.write(fs.readFileSync("./nes/nes-embed.html"));
     }
