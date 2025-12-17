@@ -15,7 +15,7 @@
         "gba": "mgba",
         "smc": "snes9x",
         "sfc": "snes9x",
-        ".md": "genesis_plus_gx", 
+        "md": "genesis_plus_gx", 
         // it has to have a dot in the name cause its only 2 letters long
       }
     </script>
@@ -106,7 +106,7 @@
           console.log(e)
           // it's not in the special roms list
         }
-        e.innerHTML = e.innerHTML.slice(0, -4);
+        e.innerHTML = e.innerHTML.split(".")[0]; // this will be easier
       })
       // it's a hack, but it works good enough for me.
     </script>
