@@ -2,6 +2,8 @@
 
 hey, these files are like... really big. if you do wanna try it here's how:
 
+(if you take these for yourself please credit me btw)
+
 ## on a chromebook?
 
 simple. (ish)
