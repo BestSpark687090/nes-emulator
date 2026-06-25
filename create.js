@@ -84,7 +84,7 @@ function everything() {
         `resolveCoreWasm:e=>"data:application/octet-stream;base64,"+coreWasm,resolveCoreJs:e=>"data:application/octet-stream;base64,"+coreJs`,
         `resolveCoreWasm:e=>"https://cdn.jsdelivr.net/gh/arianrhodsandlot/retroarch-emscripten-build@v1.16.0/retroarch/prboom_libretro.wasm",resolveCoreJs:e=>"https://cdn.jsdelivr.net/gh/arianrhodsandlot/retroarch-emscripten-build@v1.16.0/retroarch/prboom_libretro.js"`,
       );
-    } else if (ext == ".md") {
+    } else if (ext == ".md" || ext == "bin") {
       core = "genesis_plus_gx";
     } else if (false) {
       //(ext == "zip") {
