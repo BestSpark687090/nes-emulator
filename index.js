@@ -44,6 +44,10 @@ http.createServer(function (req, res) {
       res.write(replaced);
     }else if(req.url == "/about"){
       res.write(fs.readFileSync("./about.html"));
+    } else if (req.url == "/how-to-control"){
+      res.write(fs.readFileSync("./how-to-control.html"))
+    }else if (req.url == "/how_to_control.png"){
+      res.write(fs.readFileSync("./how_to_control.png"))
     } else if (!req.url.includes("?rom=")&&!req.url.includes("/urls")) {
       res.writeHead(301, { Location: "/listall" });
       res.write("<a href='/listall'>redirect</a>");
